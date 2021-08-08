@@ -3,6 +3,7 @@ https://nvombatblogs.herokuapp.com -
 Website for blog posts using the Django Web Framework
 
 ```
+pip install -r requirements.txt
 cd django_blog
 python manage.py runserver
 ```
