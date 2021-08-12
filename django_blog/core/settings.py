@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-import os
 #import django_heroku
+import os
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -81,14 +81,24 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+#For postgres heroku
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': os.environ.get('NAME'),
+#         'USER': os.environ.get('USER'),
+#         'PASSWORD': os.environ.get('PASSWORD'),
+#         'HOST': 'localhost',
+#         'PORT': os.environ.get('PORT'),
+#     }
+# }
+
+
+#For localhost
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get('NAME'),
-        'USER': os.environ.get('USER'),
-        'PASSWORD': os.environ.get('PASSWORD'),
-        'HOST': 'localhost',
-        'PORT': os.environ.get('PORT'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'db.sqlite3',
     }
 }
 
@@ -159,8 +169,8 @@ EMAIL_HOST_PASSWORD = os.environ.get('backend_pwd')
 # AWS_ACCESS_KEY_ID=os.environ.get("AWS_ACCESS_KEY_ID")
 # AWS_SECRET_ACCESS_KEY=os.environ.get("AWS_SECRET_ACCESS_KEY")
 # AWS_STORAGE_BUCKET_NAME=os.environ.get("AWS_STORAGE_BUCKET_NAME")
-# AWS_QUERYSTRING_AUTH=False
 
+# AWS_QUERYSTRING_AUTH=False
 # AWS_S3_FILE_OVERWRITE=False
 # AWS_DEFAULT_ACL=None
 
