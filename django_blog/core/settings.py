@@ -29,9 +29,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = (os.environ.get('DEBUG_VALUE')=="True")
+DEBUG = (os.environ.get('DEBUG_VALUE')=='True')
 
-ALLOWED_HOSTS = [] #["nvombatblogs.herokuapp.com"]
+ALLOWED_HOSTS = [] #['nvombatblogs.herokuapp.com']
 
 
 # Application definition
@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'storages',
+    #'storages'
 ]
 
 MIDDLEWARE = [
@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    #'whitenoise.middleware.WhiteNoiseMiddleware',
+    #'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'core.urls'
@@ -167,7 +167,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get('backend_mail')
 EMAIL_HOST_PASSWORD = os.environ.get('backend_pwd')
 
-# DEFAULT_FILE_STORAGE="storages.backends.s3boto3.S3Boto3Storage"
+# DEFAULT_FILE_STORAGE='storages.backends.s3boto3.S3Boto3Storage'
 
 # AWS_ACCESS_KEY_ID=os.environ.get("AWS_ACCESS_KEY_ID")
 # AWS_SECRET_ACCESS_KEY=os.environ.get("AWS_SECRET_ACCESS_KEY")
