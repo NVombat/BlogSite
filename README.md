@@ -7,6 +7,7 @@ pip install -r requirements.txt
 cd django_blog
 python manage.py runserver
 ```
+#### NOTE - ENVIRONMENT VARIABLES WILL HAVE TO BE CREATED (ON PC OR .ENV FILE)
 
 ## Login/Register View
 ![Screenshot from 2021-08-03 20-55-14](https://user-images.githubusercontent.com/63743496/128043171-41bc7c8a-1cae-4936-9727-8d6a906f02ae.png)
@@ -30,14 +31,6 @@ password -> alskdjfhg123
 ![Screenshot from 2021-08-03 20-55-44](https://user-images.githubusercontent.com/63743496/128043785-fde0de66-8bfb-4381-8cdb-f88094bde6ec.png)
 ![Screenshot from 2021-08-03 20-57-39](https://user-images.githubusercontent.com/63743496/128043859-68123047-d586-42a2-9d97-a51f25bd584d.png)
 ![Screenshot from 2021-08-03 20-58-04](https://user-images.githubusercontent.com/63743496/128043903-dd9b0884-3006-4169-980a-f907ab9ad922.png)
-
-## HOW TO OPEN APP FROM CLI
-``` 
-heroku login
-cd projectfolder
-git init
-heroku open
-```
 
 ### Youtube Playlist Source:
 https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p (Corey MS Schafer)
